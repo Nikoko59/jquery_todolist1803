@@ -1,0 +1,123 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family:"Open Sans" , sans-serif; 
+  color: #474747;
+}
+
+body {
+  padding: 5rem 0;
+  background: linear-gradient(125deg, #6845f4 0%, #f4b967 100%);
+  min-height: 100vh;
+}
+.container {
+  width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(125deg, #5effc9 0%, #45c2fc 100%);
+  padding: 2rem 1rem;
+  border-radius: 35px;
+  box-shadow: 0px 10px 30px 0px #3f3f3f;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 2.35rem;
+  text-shadow: -1px 3px 2px #fffaf9;
+}
+form {
+  margin: 2rem 0;
+}
+form input {
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 1rem;
+  border: 2px solid #0460ff;
+  font-size: 1.3rem;
+  background: linear-gradient(125deg, #19f4d7 0%, #013ef2 100%);
+  color: #1c0000;
+  box-shadow: 0px 2px 10px 0px #3f3f3f;
+  transition: 0.7s;
+}
+form input::placeholder {
+  color: #ffffff;
+}
+form input:focus {
+  border: 3px solid #f39a0a;
+}
+ul {
+  text-align: left;
+}
+ul li {
+  list-style: none;
+  padding: 0.7rem;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+ul li:nth-child(even) {
+  background : white ; 
+  border: 1px solid #0460ff;
+  color :  #0460ff;
+  border-radius : 20px ;  
+
+}
+ul li:before {
+  content: "*";
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  color: #160000;
+}
+ul li:after {
+  opacity: 0;
+}
+ul li:hover:after {
+  content: " (terminé)";
+  opacity: 0;
+  font-size: 1.1rem;
+  color: #000000;
+  background : red ; 
+  font-style: italic;
+  animation: pseudoClassAnim 2s forwards;
+}
+li.checked:before {
+  content: "✔";
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  color: #fd4a1d;
+}
+li.checked:hover:after {
+  content: " (supprimer)";
+  font-size: 1.1rem;
+  color: #fd4a1d;
+  opacity: 0;
+}
+
+#btn1 {
+  background: white ;
+  border : 1px solid orange; 
+  padding: 10px;
+  width: 100px;
+  cursor: pointer; 
+  font-size : 0.9rem ; 
+
+}
+
+#btn1:hover{
+  background: black;
+  color : orange; 
+  transition : 0.3s ease-in; 
+  opacity : 0.8; 
+}
+
+.strike {
+  text-decoration : line-through;}
